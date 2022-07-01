@@ -33,3 +33,7 @@ def index():
 @app.get("/users")
 def fetch_users():
     return db 
+
+@app.post('/create-user')
+def create_user(user: User):
+    return user
