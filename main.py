@@ -36,4 +36,5 @@ def fetch_users():
 
 @app.post('/create-user')
 def create_user(user: User):
+    db.append(user)
     return user
